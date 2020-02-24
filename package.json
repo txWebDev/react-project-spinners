@@ -1,0 +1,20 @@
+{
+  "name": "react-project-spinners",
+  "version": "1.0.0",
+  "description": "Modern project management lectures. Code Realm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/txWebDev/react-project-spinners.git"
+  },
+  "keywords": ["react","spinners"],
+  "author": "JMMedina",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/txWebDev/react-project-spinners/issues"
+  },
+  "homepage": "https://github.com/txWebDev/react-project-spinners#readme"
+}
