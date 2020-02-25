@@ -1,35 +1,45 @@
 {
-  "name": "react-project-spinners",
-  "version": "1.0.0",
-  "description": "Modern project management lectures. Code Realm",
-  "main": "index.js",
-  "scripts": {
+	"name": "react-project-spinners",
+	"version": "1.0.0",
+	"description": "Modern project management lectures. Code Realm",
+	"main": "index.js",
+	"scripts": {
 		"lint": "eslint '**/*.js'",
-		"lint:fix": "prettier-eslint '**/*.js' --write"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/txWebDev/react-project-spinners.git"
-  },
-  "keywords": [
-    "react",
-    "spinners"
-  ],
-  "author": "JMMedina",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/txWebDev/react-project-spinners/issues"
-  },
-  "homepage": "https://github.com/txWebDev/react-project-spinners#readme",
-  "devDependencies": {
-    "eslint": "^6.6.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^1.19.1",
-    "prettier-eslint": "^9.0.1",
-    "prettier-eslint-cli": "^5.0.0"
-  }
+		"lint:fix": "prettier-eslint '**/*.js' --write",
+		"prebuild": "rm -rf dist",
+		"build": "rollup -c"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/txWebDev/react-project-spinners.git"
+	},
+	"keywords": [
+		"react",
+		"spinners"
+	],
+	"author": "JMMedina",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/txWebDev/react-project-spinners/issues"
+	},
+	"homepage": "https://github.com/txWebDev/react-project-spinners#readme",
+	"devDependencies": {
+		"@babel/core": "^7.8.4",
+		"@babel/preset-env": "^7.8.4",
+		"@babel/preset-react": "^7.8.3",
+		"eslint": "^6.6.0",
+		"eslint-config-standard": "^14.1.0",
+		"eslint-plugin-import": "^2.20.1",
+		"eslint-plugin-node": "^11.0.0",
+		"eslint-plugin-promise": "^4.2.1",
+		"eslint-plugin-react": "^7.18.3",
+		"eslint-plugin-standard": "^4.0.1",
+		"prettier": "^1.19.1",
+		"prettier-eslint": "^9.0.1",
+		"prettier-eslint-cli": "^5.0.0",
+		"rollup": "^1.31.1",
+		"rollup-plugin-babel": "^4.3.3",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-terser": "^5.2.0"
+	}
 }
